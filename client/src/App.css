@@ -1,0 +1,56 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+ body{
+  background-color: #f0f0f0;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow {
+  cursor: pointer;
+  font-size: 20px;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.arrow.disabled {
+  color: #999;
+  cursor: not-allowed;
+}
+
+.page-number {
+  cursor: pointer;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.page-number.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.page-number:hover {
+  background-color: #f0f0f0;
+}
+
+  .card-dess {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 4px 61px rgba(16, 20, 214, 0.329), 0 1px 3px rgba(31, 156, 206, 0.08);
+  }
+  .card-dess:hover {
+    transform: scale(1.02);
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+  }
+  
+  .postions{
+    top: 69%;
+    left: 92%;
+  }
